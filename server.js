@@ -141,14 +141,6 @@ function getSystemPrompt() {
 const FRONTEND_DIR = __dirname;
 const FRONTEND_INDEX = path.join(FRONTEND_DIR, 'index.html');
 
-// TEMP DEBUG — remove once the ENOENT issue is resolved
-console.log('DEBUG __dirname:', __dirname);
-try {
-  console.log('DEBUG files in __dirname:', require('fs').readdirSync(__dirname));
-} catch (e) {
-  console.log('DEBUG readdir failed:', e.message);
-}
-
 app.use(cors());
 app.get('/', (_req, res) => res.sendFile(FRONTEND_INDEX));
 app.use(express.static(FRONTEND_DIR));
