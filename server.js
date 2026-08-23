@@ -138,8 +138,8 @@ function getSystemPrompt() {
 // ---------------------------------------------------------------------------
 // Middleware — static files served first (own router, skips JSON parsing)
 // ---------------------------------------------------------------------------
-const FRONTEND_DIR = path.join(__dirname, '../frontend');
-const FRONTEND_INDEX = path.join(FRONTEND_DIR, 'ui.html');
+const FRONTEND_DIR = path.join(__dirname, '../');
+const FRONTEND_INDEX = path.join(FRONTEND_DIR, 'index.html');
 
 app.use(cors());
 app.get('/', (_req, res) => res.sendFile(FRONTEND_INDEX));
