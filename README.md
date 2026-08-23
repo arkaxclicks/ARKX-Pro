@@ -14,7 +14,7 @@ This is a drop-in replacement for your backend. Your supplied `index.html` was n
 
 ## Install and Run
 
-Place the supplied frontend unchanged at `frontend/ui.html`, preserve the existing folder layout, then run:
+Place the supplied frontend unchanged at `index.html`, preserve the existing folder layout, then run:
 
 ```powershell
 npm install
